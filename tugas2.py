@@ -15,4 +15,7 @@ uang_lembur_perhari = 150000
 print ("Nama Karyawan",nama)
 
 total_gaji = int ((hari_kerja/hari_kerja_perbulan)*gaji_pokok+(hari_lembur_perhari*uang_lembur_perhari))
-print ("Gaji Anda Bulan Ini Rp. {:,}".format (total_gaji))
+if hari_kerja < 30 :
+    print ("Gaji Anda Bulan Ini : ",total_gaji)
+elif hari_kerja > 30 :
+    print ("Anda Melebihi Total Kerja Selama Sebulan")
